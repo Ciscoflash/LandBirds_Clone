@@ -27,7 +27,7 @@ const Navbar = () => {
               </li>
             );
           })}
-          <div className="flex h-full space-x-2 bg-blue-950 w-[15.5rem] px-6  items-center justify-center border-0 text-white hover:opacity-80 ">
+          <div className="flex h-full space-x-2 bg-blue-950 w-[15.5rem] px-6 cursor-pointer  items-center justify-center border-0 text-white hover:opacity-80 ">
             <LiaEditSolid className="text-3xl" />
             <span className="flex text-xl  text-center">Order translation</span>
           </div>
