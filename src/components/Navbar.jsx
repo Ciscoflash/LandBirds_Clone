@@ -14,7 +14,7 @@ const Navbar = () => {
   const Menus = ["Home", "About Us", "Our Services", "Careers", "Contact Us"];
   return (
     <>
-      <div className="h-22 w-full bg-white flex justify-between shadow-lg pl-16 sticky top-0">
+      <div className="h-22 w-full bg-white flex justify-between shadow-lg pl-16 sticky top-0 z-10">
         <img src={Logo} alt="logo" className="w-auto py-3 cursor-pointer" />
         <div className="hidden lg:flex lg:w-[73%]  items-center justify-between ml-auto">
           {Menus.map((menu) => {
