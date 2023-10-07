@@ -1,7 +1,14 @@
 import React from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Layout = () => {
-  return <div className="bg-white h-24"></div>;
+  return (
+    <div className="">
+      <Navbar />
+      <Footer />
+    </div>
+  );
 };
 
 export default Layout;
