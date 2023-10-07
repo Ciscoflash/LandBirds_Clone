@@ -38,9 +38,9 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      {/* Mobile Menu */}
+      {/* Mobile   Menu */}
       {isOpen && (
-        <div className="fixed md:hidden top-0 left-0 w-screen h-screen  flex justify-center items-center bg-[#0C1220]">
+        <div className="fixed md:hidden top-0 left-0 w-screen h-screen  flex justify-center items-center bg-[#0C1220] z-50">
           <button
             className="absolute top-8 right-8 text-white"
             onClick={toggleMenu}
