@@ -4,6 +4,7 @@ import { default as Logo } from "./../assets/images/Lang-Birds-final-70.png";
 import { LiaEditSolid } from "react-icons/lia";
 import { BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,12 +20,17 @@ const Navbar = () => {
         <div className="hidden lg:flex lg:w-[73%]  items-center justify-between ml-auto">
           {Menus.map((menu) => {
             return (
-              <li
-                className="list-none text-lg hover:text-blue-950 cursor-pointer   "
+              <Link
+                to={
+                  menu === "Home"
+                    ? "/"
+                    : `/${menu.toLowerCase().replace(/\s+/g, "-")}`
+                }
+                className="list-none text-lg hover:text-blue-950 cursor-pointer"
                 key={menu}
               >
                 {menu}
-              </li>
+              </Link>
             );
           })}
           <div className="flex h-full space-x-2 bg-blue-950 w-[15.5rem] px-6 cursor-pointer  items-center justify-center border-0 text-white hover:opacity-80 ">

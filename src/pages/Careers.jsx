@@ -2,7 +2,7 @@ import React from "react";
 import Main from "../components/Main";
 import CarearBg from "../assets/images/carearBg.jpg";
 import form from "../components/form";
-const Carear = () => {
+const Careers = () => {
   return (
     <div>
       <div
@@ -18,4 +18,4 @@ const Carear = () => {
   );
 };
 
-export default Carear;
+export default Careers;
