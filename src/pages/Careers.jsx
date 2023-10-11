@@ -1,7 +1,7 @@
 import React from "react";
 import Main from "../components/Main";
 import CarearBg from "../assets/images/carearBg.jpg";
-import form from "../components/form";
+import Form from "../components/form";
 const Careers = () => {
   return (
     <div>
@@ -13,6 +13,18 @@ const Careers = () => {
           <h1 className="text-white text-3xl">Career</h1>
           <p className="text-white">HOME / CAREERS</p>
         </div>
+      </div>
+
+      <div className="py-20">
+        <p className="text-2xl lg:text-4xl">
+          Submit Your CV Now <br className="md:hidden" /> And Be Welcome{" "}
+          <br className="hidden md:block" /> on Board
+        </p>
+        <Form
+          details={"Exnter name here"}
+          FirstNameL={"Enter First Name"}
+          LastNameL={"Enter Last Name"}
+        />
       </div>
     </div>
   );
