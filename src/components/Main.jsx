@@ -4,6 +4,7 @@ import { default as ManImage } from "../assets/images/image-3.jpg";
 const Main = ({
   image,
   textOverlay,
+  textOverlay1,
   children,
   textPosition,
   bgText,
@@ -16,20 +17,21 @@ const Main = ({
       <header className="relative">
         <img src={image} alt="Hero" className="w-full min-h-max md:min-h-fit" />
         <div
-          className={`absolute top-10 left-5 w-full h-full flex items-center  ${overlayClasses}`}
+          className={`absolute top-28 left-5 w-full px-12 h-auto  items-center  ${overlayClasses}`}
         >
-          <div className="bg-black opacity-70 p-4 text-white ">
-            <h1>{textOverlay} </h1>
+          <div className=" text-[3.9rem] w-[42rem]  text-white ">
+            <h1 className="text-[#0A98CC]">{textOverlay} </h1>
+            <h1>{textOverlay1}</h1>
           </div>
-          <div className="w-full">
-            <h1 className="text-6xl flex items-center text-white justify-center">
+          <div className=" flex-wrap my-6">
+            <span className="hover:text-black hover:bg-white cursor-pointer text-sm w-fit flex items-center text-white py-4 px-10 bg-[#0A98CC]">
               {bgText}
-            </h1>
+            </span>
             <span className="w-full">{route}</span>
           </div>
         </div>
       </header>
-      <main className="container mx-auto p-4">{children}</main>
+      <main className="mx-auto ">{children}</main>
     </div>
   );
 };
