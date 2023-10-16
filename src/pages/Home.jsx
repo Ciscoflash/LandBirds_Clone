@@ -3,10 +3,12 @@ import Main from "../components/Main";
 import { default as handShake } from "../assets/images/handShake.jpg";
 import { default as ManImage } from "../assets/images/image-3.jpg";
 import { default as BgImage } from "../assets/images/bgblue.jpg";
+import { LiaEditSolid } from "react-icons/lia";
+import ServicesCard from "../components/ServicesCard";
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <Main
         image={ManImage}
         textOverlay={"Open Your Business "}
@@ -18,9 +20,9 @@ const Home = () => {
           <img
             src={handShake}
             alt="Handshake"
-            className="w-[70%] h-auto hidden md:block"
+            className="w-[70%] h-auto hidden lg:block"
           />
-          <div className="bg-[#f3f5f9] md:w-[50%] w-full  md:space-y-16 block  md:absolute text-left md:top-1/2 md:right-16 md:-translate-y-1/2 md:transform  p-[3.5rem] ">
+          <div className="bg-[#f3f5f9] lg:w-[50%] w-full  lg:space-y-16 block  lg:absolute text-left lg:top-1/2 lg:right-16 lg:-translate-y-1/2 lg:transform  p-[3.5rem] ">
             <h6 className="text-[#0d7fa3] md:text-[1.5rem] text-[1rem]    ">
               LangBirds | Flying over Your Translation Needs
             </h6>
@@ -41,10 +43,31 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div
-          className="my-4 bg-cover bg-center h-[20rem] w-screen"
-          style={{ backgroundImage: `url(${BgImage})` }}
-        ></div>
+
+        {/* //We offer a wide range of services */}
+        <div className="relative lg:h-[70rem] h-[50rem] w-full  bg-red-200">
+          <div
+            className="my-4 mb-[3rem] bg-cover  bg-center  relative  h-[24rem]  w-full"
+            style={{ backgroundImage: `url(${BgImage})` }}
+          >
+            <div className=" w-full  mx-auto p-[3.5rem] ">
+              <div className="w-[60%] flex-wrap text-[2rem] text-left">
+                <span className="text-[#0A98CC]  ">We Offer a Wide</span>
+                <span className="text-white">
+                  {" "}
+                  Range of Translation Services
+                </span>
+              </div>
+              <div className="   grid gap-4 lg:grid-cols-3 grid-cols-2  my-4">
+                <ServicesCard />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className=" h-10">
+          <h1>Hi hhdhhd </h1>
+        </div>
       </Main>
     </div>
   );
