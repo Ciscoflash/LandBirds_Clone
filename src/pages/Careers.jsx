@@ -21,7 +21,7 @@ const Careers = () => {
           <br className="hidden md:block" /> on Board
         </p>
         <Form
-          details={"Exnter name here"}
+          details={"Enter Your Details Please"}
           FirstNameL={"Enter First Name"}
           LastNameL={"Enter Last Name"}
         />

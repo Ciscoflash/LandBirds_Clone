@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import Careers from "./pages/Careers";
-
+import Contactus from "./pages/Contactus";
 function App() {
   return (
     <BrowserRouter>
@@ -17,7 +17,8 @@ function App() {
         {/* <Route path="/about-us" element={<AboutUs />} /> */}
         {/* <Route path="/our-services" element={<OurServices />} /> */}
         <Route path="/careers" element={<Careers />} />
-        {/* <Route path="/contact-us" element={<ContactUs />} /> */}
+        <Route path="/contact-us" element={<Contactus />} />
+        {/* <Route path="/contacts" element={<Contactus />} /> */}
       </Routes>
       <Footer />
     </BrowserRouter>
