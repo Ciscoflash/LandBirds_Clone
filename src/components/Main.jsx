@@ -13,7 +13,7 @@ const Main = ({
   const overlayClasses =
     textPosition === "center" ? "text-center" : "text-left";
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <header className="relative">
         <img src={image} alt="Hero" className="w-full min-h-max lg:min-h-fit" />
         <div

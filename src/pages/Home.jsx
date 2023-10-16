@@ -3,7 +3,7 @@ import Main from "../components/Main";
 import { default as handShake } from "../assets/images/handShake.jpg";
 import { default as ManImage } from "../assets/images/image-3.jpg";
 import { default as BgImage } from "../assets/images/bgblue.jpg";
-import { LiaEditSolid } from "react-icons/lia";
+
 import ServicesCard from "../components/ServicesCard";
 
 const Home = () => {
@@ -45,7 +45,7 @@ const Home = () => {
         </div>
 
         {/* //We offer a wide range of services */}
-        <div className="relative lg:h-[70rem] h-[50rem] w-full  bg-red-200">
+        <div className="relative md:h-[70rem] h-[69rem] w-full  ">
           <div
             className="my-4 mb-[3rem] bg-cover  bg-center  relative  h-[24rem]  w-full"
             style={{ backgroundImage: `url(${BgImage})` }}
@@ -58,8 +58,37 @@ const Home = () => {
                   Range of Translation Services
                 </span>
               </div>
-              <div className="   grid gap-4 lg:grid-cols-3 grid-cols-2  my-4">
-                <ServicesCard />
+              <div className="   grid gap-4 lg:grid-cols-3 grid-cols-2 my-4">
+                <ServicesCard
+                  serviceTitle={"Localization"}
+                  serviceInfo=" Localization Localization is conversion of
+                   the terminology and cultural nuance from one part of the
+                   world’s language, usually for marketing purposes,"
+                />
+                <ServicesCard
+                  serviceTitle={"Translation"}
+                  serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
+                />
+                <ServicesCard
+                  serviceTitle={"Transcription"}
+                  serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
+                />
+                <ServicesCard
+                  serviceTitle={"Annotation"}
+                  serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
+                />
+                <ServicesCard
+                  serviceTitle={"Subtitling and Captioning"}
+                  serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
+                />
+                <ServicesCard
+                  serviceTitle={"Designs"}
+                  serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
+                />
+                <ServicesCard
+                  serviceTitle={"Copywriting/Content Writing"}
+                  serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
+                />
               </div>
             </div>
           </div>
