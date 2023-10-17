@@ -3,6 +3,8 @@ import Main from "../components/Main";
 import { default as handShake } from "../assets/images/handShake.jpg";
 import { default as ManImage } from "../assets/images/image-3.jpg";
 import { default as BgImage } from "../assets/images/bgblue.jpg";
+import { default as WhyusImg } from "../assets/images/whyus.jpg";
+import { default as workingdesk } from "../assets/images/workingdesk2.jpg";
 
 import ServicesCard from "../components/ServicesCard";
 
@@ -44,21 +46,21 @@ const Home = () => {
           </div>
         </div>
 
-        {/* //We offer a wide range of services */}
-        <div className="relative md:h-[70rem] h-[69rem] w-full  ">
+        {/* //We offer a wide range of services ;*/}
+        <div className="relative bg-[#f3f5f9] min-h-[138rem] sm:min-h-[106rem] md:min-h-[114rem] lg:min-h-[90rem] xl:min-h-[90rem] w-full  ">
           <div
-            className="my-4 mb-[3rem] bg-cover  bg-center  relative  h-[24rem]  w-full"
+            className="my-[4rem] mb-[3rem] bg-cover  bg-center  relative  h-[65rem]  w-full"
             style={{ backgroundImage: `url(${BgImage})` }}
           >
-            <div className=" w-full  mx-auto p-[3.5rem] ">
-              <div className="w-[60%] flex-wrap text-[2rem] text-left">
+            <div className="w-[80%] py-[2rem] md:py-[6rem] mx-auto ">
+              <div className="md:w-[40%] w-[60%] flex-wrap md:text-[2.5rem] text-[2rem] text-left">
                 <span className="text-[#0A98CC]  ">We Offer a Wide</span>
                 <span className="text-white">
                   {" "}
                   Range of Translation Services
                 </span>
               </div>
-              <div className="   grid gap-4 lg:grid-cols-3 grid-cols-2 my-4">
+              <div className="border-b md:py-[4rem] pb-16 grid  gap-4 lg:grid-cols-3 grid-cols-2 my-4">
                 <ServicesCard
                   serviceTitle={"Localization"}
                   serviceInfo=" Localization Localization is conversion of
@@ -86,6 +88,7 @@ const Home = () => {
                   serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
                 />
                 <ServicesCard
+                  // className="hidden"
                   serviceTitle={"Copywriting/Content Writing"}
                   serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
                 />
@@ -94,8 +97,86 @@ const Home = () => {
           </div>
         </div>
 
-        <div className=" h-10">
-          <h1>Hi hhdhhd </h1>
+        {/* Why Us SECTION */}
+        <div className="w-full  bg-[#f3f5f9] flex items-center pb-16">
+          <div className="md:w-[80%] bg-[#f3f5f9] w-full px-8 lg:px-4 pt-[5rem] grid  lg:grid-cols-2  mx-auto  ">
+            <div className="w-[100%] ">
+              <img src={WhyusImg} alt="Why-Us" className="w-full" />
+            </div>
+
+            <div className=" lg:w-[100%] w-full py-4 md:py-1  text-left   lg:px-[3rem] ">
+              <h6 className="text-[#0d7fa3] md:text-[2rem] text-[1.8rem] py-4 md:py-0   ">
+                Why Us?
+              </h6>
+              <ul className=" pl-6 list-disc list-left text-[1.1rem] md:text-[0.84rem] lg:text-[1.08rem] space-y-1 mb-8   text-[#0c1220] ">
+                <li>
+                  Exceptional service: Our clients will receive exceptional
+                  service through our translated and localized product.{" "}
+                </li>
+                <li>
+                  Highly experienced team with a proven track record in
+                  providing top quality services to clients across the globe.
+                </li>
+
+                <li>
+                  Guarantee of confidentiality: LangBirds commits itself to our
+                  internal policy on confidentiality, giving our clients peace
+                  of mind that their documents are in safe hands.
+                </li>
+              </ul>
+
+              <button
+                href="#"
+                className="py-[7px] md:mb-16 font-medium text-sm md:text-md px-[28px] hover:bg-black bg-[#01335d] text-white"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Get Quote */}
+        <div
+          className=" hidden  bg-cover  bg-center  md:h-[20rem] lg:h-[32rem] items-center md:flex w-full"
+          style={{ backgroundImage: `url(${BgImage})` }}
+        >
+          <div className="w-[80%] py-[4rem] space-y-8 md:leading-[3rem] lg:leading-[4rem]  mx-auto flex-wrap text-[2rem] text-left">
+            <div className=" w-[60%] ">
+              <span className="text-[#0A98CC]  ">Transforming</span>
+              <span className="text-white">
+                {" "}
+                the World of Professional Translation Interested, but in a
+                hurry?
+              </span>
+            </div>
+            <button
+              href="#"
+              className="  text-[0.95rem]  px-[45px] hover:bg-white bg-[#0d7fa3] text-white hover:text-black"
+            >
+              GET INSTANT QUOTE
+            </button>
+            {/* #0d7fa3; */}
+          </div>
+        </div>
+
+        {/* how it works and FAQS */}
+        <div className="bg-[#f3f5f9] w-full">
+          <div className="w-[80%] grid md:grid-cols-2 gap-4 py-[4rem] space-y-8 md:leading-[3rem] lg:leading-[4rem]  mx-auto flex-wrap text-[2rem] text-left">
+            <div className=" w-full ">
+              <h1 className="">How it Works</h1>
+              <div className="w-full ">
+                <img src={workingdesk} alt="desk" />
+              </div>
+              <button
+                href="#"
+                className="  text-[0.95rem]  px-[45px] hover:bg-white bg-[#0d7fa3] text-white hover:text-black"
+              >
+                GET INSTANT QUOTE
+              </button>
+            </div>
+
+            {/* #0d7fa3; */}
+          </div>
         </div>
       </Main>
     </div>
