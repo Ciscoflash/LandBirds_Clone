@@ -7,6 +7,8 @@ import { default as WhyusImg } from "../assets/images/whyus.jpg";
 import { default as workingdesk } from "../assets/images/workingdesk2.jpg";
 
 import ServicesCard from "../components/ServicesCard";
+import HowitworksCard from "../components/HowitworksCard";
+import FaqCard from "../components/FaqCard";
 
 const Home = () => {
   return (
@@ -98,7 +100,7 @@ const Home = () => {
         </div>
 
         {/* Why Us SECTION */}
-        <div className="w-full  bg-[#f3f5f9] flex items-center pb-16">
+        <div className="w-full  bg-[#f3f5f9] flex items-center lg:pb-16">
           <div className="md:w-[80%] bg-[#f3f5f9] w-full px-8 lg:px-4 pt-[5rem] grid  lg:grid-cols-2  mx-auto  ">
             <div className="w-[100%] ">
               <img src={WhyusImg} alt="Why-Us" className="w-full" />
@@ -160,21 +162,77 @@ const Home = () => {
         </div>
 
         {/* how it works and FAQS */}
-        <div className="bg-[#f3f5f9] w-full">
-          <div className="w-[80%] grid md:grid-cols-2 gap-4 py-[4rem] space-y-8 md:leading-[3rem] lg:leading-[4rem]  mx-auto flex-wrap text-[2rem] text-left">
-            <div className=" w-full ">
+        <div className="bg-[#f3f5f9] pb-10 w-full">
+          <div className="md:w-[80%] w-full border-b pb-16 px-8 lg:px-4 grid md:grid-cols-2 gap-8 lg:gap-8 py-[4rem] mx-auto flex-wrap text-[1.8rem] text-left">
+            <div className="  w-full space-y-4 lg:space-y-12">
               <h1 className="">How it Works</h1>
               <div className="w-full ">
                 <img src={workingdesk} alt="desk" />
               </div>
-              <button
+              <div className="lg:pt-1 pt-6 flex space-y-4 flex-col items-center justify-center px-4">
+                <HowitworksCard
+                  header={"Approve the quote and pay"}
+                  body={
+                    "Once you have approved the quote, our skilled translators will begin working on your project."
+                  }
+                  page={"01"}
+                />
+                <HowitworksCard
+                  header={"Your project has just started!"}
+                  body={
+                    "Our team will quickly assess the scope of the project and will translate the content with an extremely high level of accuracy and interpretation."
+                  }
+                  page={"02"}
+                />
+                <HowitworksCard
+                  header={"Your translation is ready in your inbox"}
+                  body={
+                    "After your translation has been completed and checked for quality assurance. It is delivered directly to your email inbox for review."
+                  }
+                  page={"03"}
+                />
+              </div>
+              {/* <button
                 href="#"
                 className="  text-[0.95rem]  px-[45px] hover:bg-white bg-[#0d7fa3] text-white hover:text-black"
               >
                 GET INSTANT QUOTE
+              </button> */}
+            </div>
+            <div className="  w-full space-y-10 lg:space-y-12">
+              {/* <FAQCards/> */}
+              <h1 className="">FAQs</h1>
+              <div className=" w-full space-y-4 lg:space-y-6">
+                <FaqCard
+                  header={"How can I receive a quote?"}
+                  body={
+                    "Just scroll the “Home” page down to the “Get a Quote” section. Fill-in the fields of each box and click “Get Me an Instant Quote” to get your quote immediately. You can contact us if more information are needed."
+                  }
+                />
+                <FaqCard
+                  header={"How can I a translation project?"}
+                  body={
+                    "Go to “Order Translation” tab and fill-in all box fields and click “Email My Quote”. We will receive your project instantly and send your quote with all project details. We will proceed with translation once you confirm your acceptance on the quote."
+                  }
+                />
+                <FaqCard
+                  header={"Who sees the documents for translation?"}
+                  body={
+                    "Our online dedicated team sees your uploaded documents, then they forward them to our project management to process your documents and get to you quickly with a quote."
+                  }
+                />
+
+                <FaqCard
+                  header={"What if I want to change or cancel my request?"}
+                  body={
+                    "Our team is dedicated to attend to your needs and messages. You can just send a message on our provided email to change or cancel any request and will receive instant replies."
+                  }
+                />
+              </div>
+              <button className="hover:bg-[#013350] px-6 py-2 lg:px-9 lg:py-5 rounded-sm text-white font-medium text-[0.8rem] lg:text-[1.2rem] bg-[#0c1220] flex-wrap text-center ">
+                CONTACT US NOW
               </button>
             </div>
-
             {/* #0d7fa3; */}
           </div>
         </div>
