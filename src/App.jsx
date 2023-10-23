@@ -20,7 +20,7 @@ function App() {
         <Route path="/contact-us" element={<Contactus />} />
         {/* <Route path="/contacts" element={<Contactus />} /> */}
       </Routes>
-      <Footer />
+      <Footer className="absolute bottom-0 w-full bg-gray-300 p-4" />
     </BrowserRouter>
   );
 }
