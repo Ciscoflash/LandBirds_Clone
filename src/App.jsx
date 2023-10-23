@@ -19,7 +19,7 @@ function App() {
         <Route path="/careers" element={<Careers />} />
         {/* <Route path="/contact-us" element={<ContactUs />} /> */}
       </Routes>
-      <Footer />
+      <Footer className="absolute bottom-0 w-full bg-gray-300 p-4" />
     </BrowserRouter>
   );
 }

@@ -9,6 +9,7 @@ import { default as workingdesk } from "../assets/images/workingdesk2.jpg";
 import ServicesCard from "../components/ServicesCard";
 import HowitworksCard from "../components/HowitworksCard";
 import FaqCard from "../components/FaqCard";
+import QuoteForm from "../components/QuoteForm";
 
 const Home = () => {
   return (
@@ -235,6 +236,9 @@ const Home = () => {
             </div>
             {/* #0d7fa3; */}
           </div>
+        </div>
+        <div className="relative z-50  ">
+          <QuoteForm />
         </div>
       </Main>
     </div>

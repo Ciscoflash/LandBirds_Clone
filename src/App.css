@@ -5,3 +5,7 @@
   text-align: center;
 }
 
+.custom-radio:checked + label::before {
+  border: 2px solid #ccc; /* Change the border color to gray */
+  background-color: #ccc; /* Change the background color to gray */
+}

@@ -4,7 +4,7 @@ import { TfiLinkedin } from "react-icons/tfi";
 import ScrollToTopButton from "../components/PageUpBtn";
 const Footer = () => {
   return (
-    <div className="min-h-full w-full  bg-blue-950 py-10 relative">
+    <div className="min-h-full w-full  bg-blue-950 py-10 relative bottom-0 z-20">
       <div className="flex gap-10 justify-center pt-96 mb-24">
         <a href="#">
           {" "}
