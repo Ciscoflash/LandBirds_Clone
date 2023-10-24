@@ -19,12 +19,13 @@ const Main = ({
         <div
           className={`absolute lg:top-28 top-8 left-5 w-full lg:px-12 px-4 h-auto  items-center  ${overlayClasses}`}
         >
-          <div className=" lg:text-[3.9rem] w-[42rem] md:text-[1.9rem] text-[1.5rem] text-white ">
-            <h1 className="text-[#0A98CC]">{textOverlay} </h1>
+          <div className=" lg:text-[3.9rem] w-[42rem] mx-auto md:text-[1.9rem] text-[1.5rem] text-white ">
+            {/* text-[#0A98CC]  */}
+            <h1 className=" text-white">{textOverlay} </h1>
             <h1>{textOverlay1}</h1>
           </div>
-          <div className=" flex-wrap my-3 lg:my-6">
-            <span className="hover:text-black hover:bg-white cursor-pointer text-sm w-fit flex items-center text-white lg:py-4  py-2 px-5 lg:px-10 bg-[#0A98CC]">
+          <div className={`flex-wrap my-3  mx-auto lg:my-6 ${overlayClasses}`}>
+            <span className="hover:text-black mx-auto text-[2.1rem] hover:bg-white cursor-pointer text-sm w-fit flex items-center text-white lg:py-4  py-2 px-5 lg:px-10 bg-[#0A98CC]">
               {bgText}
             </span>
             <span className="w-full">{route}</span>

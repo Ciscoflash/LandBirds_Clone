@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import Careers from "./pages/Careers";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -14,12 +15,12 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        {/* <Route path="/about-us" element={<AboutUs />} /> */}
+        <Route path="/about-us" element={<AboutUs />} />
         {/* <Route path="/our-services" element={<OurServices />} /> */}
         <Route path="/careers" element={<Careers />} />
         {/* <Route path="/contact-us" element={<ContactUs />} /> */}
       </Routes>
-      <Footer className="absolute bottom-0 w-full bg-gray-300 p-4" />
+      {/* <Footer className="absolute bottom-0 w-full bg-gray-300 p-4" /> */}
     </BrowserRouter>
   );
 }

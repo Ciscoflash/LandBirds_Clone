@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaRegHandPointUp } from "react-icons/fa";
+
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -31,14 +32,14 @@ const ScrollToTopButton = () => {
   }, []);
 
   return (
-    <div className="absolute right-12 bottom-40">
+    <div className="fixed right-10 bottom-10">
       {isVisible && (
         <button
           className="scroll-to-top-button text-lg text-white"
           onClick={scrollToTop}
           title="Scroll to Top"
         >
-          <div className="bg-blue-900 p-4">
+          <div className="bg-blue-950 p-4">
             <FaRegHandPointUp size={23} />
           </div>
         </button>
