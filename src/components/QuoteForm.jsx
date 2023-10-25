@@ -25,10 +25,10 @@ const QuoteForm = ({ details, FullName, LastNameL }) => {
   };
 
   return (
-    <div className="w-full   px-8 lg:px-4 py-[4rem] mx-auto  bg-[#f3f5f9] ">
-      <form className="lg:px-16 py-16 px-8 md:w-[80%]  mx-auto bg-white">
+    <div className="w-full   px-8 lg:px-4 py-[4rem] mx-auto  ">
+      <form className="lg:px-8 py-16 px-4 md:w-[100%]  mx-auto bg-white">
         <h1 className="text-center text-4xl font-normal mb-10">Get a Quote</h1>
-        <div className="grid lg:grid-cols-3 text-[0.85rem] gap-8">
+        <div className="grid lg:grid-cols-3 text-[0.85rem] gap-3">
           <div className="mb-2 ">
             <label htmlFor="fullName" className="block mb-2" />
             <input
