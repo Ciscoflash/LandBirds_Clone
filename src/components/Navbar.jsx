@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div class="fixed left-10 hidden lg:flex items-center font-extralight text-[#0A98CC] top-48 justify-between w-[20rem] rotate-90 z-50 transform origin-left p-4 bg-transparent">
+      <div className="fixed left-10 hidden lg:flex items-center font-extralight text-[#0A98CC] top-48 justify-between w-[20rem] rotate-90 z-50 transform origin-left p-4 bg-transparent">
         <a href="">GET A QUOTE</a>
         <div className="w-[0.1rem] mx-2 h-12 bg-[#0A98CC] rotate-90 z-50 transform origin-left"></div>
         <a href="">CONTACT US</a>
