@@ -6,10 +6,14 @@ import { BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ onServiceSelected }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false); // New state for the dropdown
   const dropdownRef = useRef(null); // Ref for the dropdown element
+  const handleServiceClick = (service) => {
+    // const selectedService = event.target.value;
+    onServiceSelected(service); // Call the function from QuoteForm
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -79,7 +83,12 @@ const Navbar = () => {
                 <ul className="py-2">
                   {services.map((service, index) => (
                     <li key={index} className="hover:bg-blue-900  py-2.5">
-                      <Link to={`/${service.toLowerCase()}`}>{service}</Link>
+                      <Link
+                        to={`/${service.toLowerCase()}`}
+                        onClick={() => handleServiceClick(service)}
+                      >
+                        {service}
+                      </Link>
                     </li>
                   ))}
                 </ul>
