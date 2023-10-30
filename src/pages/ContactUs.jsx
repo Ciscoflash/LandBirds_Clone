@@ -6,6 +6,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
 import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
 import Form from "../components/form";
+import FooterWithForm from "../components/FooterWithForm";
 const Contactus = () => {
   return (
     <div>
@@ -106,9 +107,13 @@ const Contactus = () => {
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-
-        <form className="h-fit w-[80%] p-5 flex flex-col gap-5 bg-white absolute  m-auto  left-10 -bottom-[22rem] z-10 md:left-24 lg:w-[50%] lg:left-1/4 lg:-bottom-[18rem]">
-          <div className="formgroup  flex flex-col gap-10 md:flex-row">
+      </div>
+      <FooterWithForm className=" mt-[25rem]  w-full">
+        <form className="h-fit border w-[80%] p-5 flex flex-col rounded-sm gap-5 bg-white absolute  m-auto  left-10 -bottom-[22rem] z-10 md:left-24 lg:w-[50%] lg:left-1/4 lg:-bottom-[18rem]">
+          <h1 className="text-center text-4xl font-normal my-10">
+            Send a Message
+          </h1>
+          <div className="formgroup text-[0.95rem] flex flex-col gap-10 md:flex-row">
             <input
               type="text"
               placeholder="Full Name *"
@@ -137,7 +142,7 @@ const Contactus = () => {
             <button className="bg-blue-950 text-white px-16 py-4">SEND</button>
           </div>
         </form>
-      </div>
+      </FooterWithForm>
     </div>
   );
 };
