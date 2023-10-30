@@ -29,8 +29,8 @@ const FooterWithForm = ({ footerText, children }) => {
           </p>
         </div>
       </div>
-      <div className="absolute bottom-[40rem] transform translate-y-1/2 flex items-center mx-auto inset-x-0  flex-col ">
-        <div className="bottom-1/2 px-2 w-[100%] lg:w-[80%]">{children}</div>
+      <div className="absolute  bottom-[40rem] transform translate-y-1/2 flex items-center mx-auto inset-x-0  flex-col ">
+        <div className="bottom-1/2  px-2 w-[100%] lg:w-[80%]">{children}</div>
       </div>
       <ScrollToTopButton />
     </div>

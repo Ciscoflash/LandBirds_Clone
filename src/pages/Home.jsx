@@ -239,7 +239,7 @@ const Home = () => {
           </div>
         </div>
 
-        <FooterWithForm className="mt-[25rem] w-full">
+        <FooterWithForm className="mt-[25rem]  w-full">
           <QuoteForm />
         </FooterWithForm>
       </Main>
