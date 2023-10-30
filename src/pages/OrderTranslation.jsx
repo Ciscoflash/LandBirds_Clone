@@ -1,15 +1,5 @@
 import React, { useState } from "react";
 import CarearBg from "../assets/images/carearBg.jpg";
-import contacts from "../assets/images/contacts.jpg";
-import { CiLocationOn } from "react-icons/ci";
-import { MdOutlineMail } from "react-icons/md";
-import { BsTelephone } from "react-icons/bs";
-import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
-import Form from "../components/form";
-import FooterWithForm from "../components/FooterWithForm";
-import { default as ManImage } from "../assets/images/image-3.jpg";
-import { default as BgImage } from "../assets/images/bgblue.jpg";
-import Main from "../components/Main";
 import Footer from "../components/footer";
 
 const OrderTranslation = () => {
@@ -24,7 +14,7 @@ const OrderTranslation = () => {
     targetLanguage: "",
     file: null,
     message: "",
-    gender: "male", // Default to 'male'
+    contactType: "No, contact me via e-mail", // Default to 'e-mail'
   });
 
   const [selectedService, setSelectedService] = useState(""); // Add state for the selected service
@@ -281,7 +271,7 @@ const OrderTranslation = () => {
                     id="call"
                     name="contactType"
                     value="Call me back"
-                    checked={formData.contactType === "Call"}
+                    checked={formData.contactType === "Call me back"}
                     onChange={handleChange}
                     className="mr-1 custom-radio"
                   />
@@ -290,10 +280,12 @@ const OrderTranslation = () => {
                 <label className="block ">
                   <input
                     type="radio"
-                    id="Private"
+                    id="mail"
                     name="contactType"
                     value="No, contact me via e-mail"
-                    checked={formData.contactType === "e-mail"}
+                    checked={
+                      formData.contactType === "No, contact me via e-mail"
+                    }
                     onChange={handleChange}
                     className="mr-1 custom-radio"
                   />

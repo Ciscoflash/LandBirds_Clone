@@ -11,6 +11,7 @@ import AboutUs from "./pages/AboutUs";
 import OurServices from "./pages/OurServices";
 import Contactus from "./pages/Contactus";
 import OrderTranslation from "./pages/OrderTranslation";
+import OrderTranscription from "./OrderTranscription";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact-us" element={<Contactus />} />
         <Route path="/order-translation" element={<OrderTranslation />} />
+        <Route path="/order-transcription" element={<OrderTranscription />} />
       </Routes>
       {/* <Footer className="absolute bottom-0 w-full bg-gray-300 p-4" /> */}
     </BrowserRouter>
