@@ -10,6 +10,7 @@ import Careers from "./pages/Careers";
 import AboutUs from "./pages/AboutUs";
 import OurServices from "./pages/OurServices";
 import Contactus from "./pages/Contactus";
+import OrderTranslation from "./pages/OrderTranslation";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path="/our-services" element={<OurServices />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact-us" element={<Contactus />} />
-        {/* <Route path="/contacts" element={<Contactus />} /> */}
+        <Route path="/order-translation" element={<OrderTranslation />} />
       </Routes>
       {/* <Footer className="absolute bottom-0 w-full bg-gray-300 p-4" /> */}
     </BrowserRouter>

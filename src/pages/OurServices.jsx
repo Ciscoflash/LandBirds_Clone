@@ -15,7 +15,7 @@ const OurServices = () => {
   return (
     <Main
       image={ManImage}
-      textOverlay={"About Us "}
+      textOverlay={"Our Services "}
       textOverlay1={""}
       textPosition={"center"}
       bgText={"All you need to know"}

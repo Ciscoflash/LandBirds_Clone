@@ -8,6 +8,7 @@ const QuoteForm = ({ details, FullName, LastNameL }) => {
     email: "",
     phoneNumber: "",
     languageSource: "",
+    language: "",
     industry: "",
     targetLanguage: "",
     file: null,
