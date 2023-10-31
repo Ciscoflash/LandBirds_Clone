@@ -439,7 +439,7 @@ const QuoteForm = ({ details, FullName, LastNameL }) => {
           </div>
         )}
 
-        {selectedService === "Copywriting" && (
+        {/* {selectedService === "Copywriting" && (
           // Input fields specific to Subtitling and Captioning & Copywriting
           <div className="grid lg:grid-cols-3 lg:mt-9 text-[0.85rem] gap-3">
             <div className="mb-2 flex items-center">
@@ -471,7 +471,7 @@ const QuoteForm = ({ details, FullName, LastNameL }) => {
               </div>
             </div>
 
-            {/* message */}
+            {/* message
             <div className="mb-2 lg:pt-3">
               <label htmlFor="message" className="block mb-2" />
 
@@ -485,7 +485,7 @@ const QuoteForm = ({ details, FullName, LastNameL }) => {
               />
             </div>
           </div>
-        )}
+        )} */}
         <button
           type="submit"
           className="bg-[#013350] mt-8 px-6 py-2 lg:px-9 lg:py-5 rounded-sm text-white text-[0.7rem] lg:text-[0.85rem] hover:bg-[#0c1220] flex-wrap text-center "
