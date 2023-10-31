@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import CarearBg from "./assets/images/carearBg.jpg";
-import Footer from "./components/footer";
+import CarearBg from "../assets/images/carearBg.jpg";
+import Footer from "../components/Footer";
 
-const OrderTranscription = () => {
+const OrderAnnotTrans = ({ serviceName, verb }) => {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -40,9 +40,9 @@ const OrderTranscription = () => {
         style={{ backgroundImage: `url(${CarearBg})` }}
       >
         <div className="pt-14 flex items-center justify-center flex-col gap-8 md:pt-24">
-          <h1 className="text-white text-4xl">Order Transcription</h1>
+          <h1 className="text-white text-4xl">Order {serviceName}</h1>
           <p className="text-slate-100 text-[1rem]">
-            HOME / ORDER TRANSCRIPTION
+            HOME / ORDER {serviceName.toUpperCase()}
           </p>
         </div>
         <div className="w-full   px-8 lg:px-1 py-[4rem] mx-auto lg:w-[70%]">
@@ -76,7 +76,7 @@ const OrderTranscription = () => {
             </div>
             <div className="mb-4 flex flex-wrap items-center">
               <label htmlFor="docType" className="block mb-2">
-                What Type of Documents Would You Like to Translate?*
+                What Type of Documents Would You Like to {verb}?*
               </label>
 
               <select
@@ -575,4 +575,4 @@ const OrderTranscription = () => {
   );
 };
 
-export default OrderTranscription;
+export default OrderAnnotTrans;
