@@ -8,11 +8,11 @@ const FooterWithForm = ({ footerText, children }) => {
   return (
     <div
       style={{ backgroundImage: `url(${BgImage})` }}
-      className="min-h-screen w-full   pt-20 relative bottom-0 z-20 mt-[25rem]"
+      className="min-h-screen w-full   pt-20 relative bottom-0 z-5 mt-[20rem]"
     >
       <p className="text-white text-[1.8rem]">{footerText}</p>
       <div className="absolute inset-x-0 bottom-0 flex flex-col items-center justify-between h-80 mx-auto w-4/5">
-        <div className="flex gap-12 mx-auto mt-5">
+        <div className="flex gap-12 mx-auto mt-16">
           <a href="#">
             {" "}
             <TfiFacebook size={16} color="white" className="" />
@@ -29,8 +29,8 @@ const FooterWithForm = ({ footerText, children }) => {
           </p>
         </div>
       </div>
-      <div className="absolute bottom-[40rem] transform translate-y-1/2 flex items-center mx-auto inset-x-0  flex-col ">
-        <div className="bottom-1/2 px-2 w-[100%] lg:w-[80%]">{children}</div>
+      <div className="absolute  bottom-[40rem] transform translate-y-1/2 flex items-center mx-auto inset-x-0  flex-col ">
+        <div className="bottom-1/2  px-2 w-[100%] lg:w-[80%]">{children}</div>
       </div>
       <ScrollToTopButton />
     </div>

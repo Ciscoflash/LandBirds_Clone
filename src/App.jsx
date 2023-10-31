@@ -5,11 +5,18 @@ import "./App.css";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-import Footer from "./components/footer";
 import Careers from "./pages/Careers";
 import AboutUs from "./pages/AboutUs";
 import OurServices from "./pages/OurServices";
 import Contactus from "./pages/Contactus";
+import OrderTranslation from "./pages/OrderTranslation";
+import OrderTranscription from "./pages/OrderTranscription";
+import OrderAnnotation from "./pages/OrderAnnotation";
+import OrderCopywriting from "./pages/OrderCopywriting";
+import OrderContentwriting from "./pages/OrderContentwriting";
+import OrderSubtitlingCaption from "./pages/OrderSubtitlingCaption";
+import OrderDesign from "./pages/OrderDesign";
+import OrderLocalization from "./pages/OrderLocalization";
 
 function App() {
   return (
@@ -21,7 +28,20 @@ function App() {
         <Route path="/our-services" element={<OurServices />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact-us" element={<Contactus />} />
-        {/* <Route path="/contacts" element={<Contactus />} /> */}
+        <Route path="/order-translation" element={<OrderTranslation />} />
+        <Route path="/order-transcription" element={<OrderTranscription />} />
+        <Route path="/order-annotation" element={<OrderAnnotation />} />
+        <Route path="/order-copywriting" element={<OrderCopywriting />} />
+        <Route
+          path="/order-subtitling/captioning"
+          element={<OrderSubtitlingCaption />}
+        />
+        <Route
+          path="/order-content-writing"
+          element={<OrderContentwriting />}
+        />
+        <Route path="/order-design" element={<OrderDesign />} />
+        <Route path="/order-localization" element={<OrderLocalization />} />
       </Routes>
       {/* <Footer className="absolute bottom-0 w-full bg-gray-300 p-4" /> */}
     </BrowserRouter>

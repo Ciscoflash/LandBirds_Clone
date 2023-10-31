@@ -1,7 +1,7 @@
 import React from "react";
 import { TfiFacebook } from "react-icons/tfi";
 import { TfiLinkedin } from "react-icons/tfi";
-import ScrollToTopButton from "../components/PageUpBtn";
+import ScrollToTopButton from "./PageUpBtn";
 import { default as BgImage } from "../assets/images/bgblue.jpg";
 // bg-blue-950
 const Footer = ({ footerText }) => {
@@ -12,7 +12,7 @@ const Footer = ({ footerText }) => {
     >
       <p className="text-white text-[1.8rem]">{footerText}</p>
       <div className="flex flex-col justify-between h-[80%] mx-auto w-[80%]">
-        <div className="flex gap-12 mx-auto mt-5">
+        <div className="flex gap-12 mx-auto mt-8">
           <a href="#">
             {" "}
             <TfiFacebook size={16} color="white" className="" />

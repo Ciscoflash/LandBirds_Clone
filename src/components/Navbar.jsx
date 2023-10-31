@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { default as MLogo } from "./../assets/images/Lang-Birds-mobile.png";
 import { default as Logo } from "./../assets/images/Lang-Birds-final-70.png";
 import { LiaEditSolid } from "react-icons/lia";
@@ -6,13 +6,52 @@ import { BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ onServiceSelected }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false); // New state for the dropdown
+  const dropdownRef = useRef(null); // Ref for the dropdown element
+  const handleServiceClick = (service) => {
+    // const selectedService = event.target.value;
+    onServiceSelected(service); // Call the function from QuoteForm
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown); // Toggle the dropdown state
+  };
+
+  // Close the dropdown when a click occurs outside of it
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setShowDropdown(false);
+    }
+  };
+
+  useEffect(() => {
+    // Add the click event listener to the document body
+    document.body.addEventListener("click", handleClickOutside);
+    return () => {
+      // Remove the event listener when the component unmounts
+      document.body.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
+  const services = [
+    "Order Translation",
+    "Order Transcription",
+    "Order Annotation",
+    "Order Localization",
+    "Order Design",
+    "Order Subtitling/Captioning",
+    "Order Copywriting",
+    "Order Content Writing",
+  ];
+
   const Menus = ["Home", "About Us", "Our Services", "Careers", "Contact Us"];
+
   return (
     <>
       <div className="h-22 w-full bg-white flex justify-between shadow-lg pl-16 sticky top-0 z-10">
@@ -33,9 +72,29 @@ const Navbar = () => {
               </Link>
             );
           })}
-          <div className="flex h-full space-x-2 bg-blue-950 w-[15.5rem] px-6 cursor-pointer  items-center justify-center border-0 text-white hover:opacity-80 ">
+          <div
+            className="flex relative h-full space-x-2 bg-blue-950 w-[15.5rem] px-6 cursor-pointer  items-center justify-center border-0 text-white hover:opacity-80 "
+            onClick={toggleDropdown}
+            ref={dropdownRef} // Set the ref to the dropdown element
+          >
             <LiaEditSolid className="text-3xl" />
-            <span className="flex text-xl  text-center">Order translation</span>
+            <span className="flex text-xl  text-center">Order a Service</span>
+            {showDropdown && (
+              <div className="absolute w-full top-20 right-0 mt-2 bg-blue-950   rounded-sm shadow-md z-50">
+                <ul className="py-2">
+                  {services.map((service, index) => (
+                    <li key={index} className="hover:bg-blue-900  py-2.5">
+                      <Link
+                        to={`/${service.toLowerCase().replace(/\s+/g, "-")}`}
+                        onClick={() => handleServiceClick(service)}
+                      >
+                        {service}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </div>
         <div className=" items-center lg:hidden flex px-8 ">
