@@ -5,7 +5,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineMail } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
 import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
-import Form from "../components/form";
+// import Form from "../components/Form";
 import FooterWithForm from "../components/FooterWithForm";
 const ContactUs = () => {
   return (

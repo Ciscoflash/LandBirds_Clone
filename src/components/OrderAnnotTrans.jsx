@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CarearBg from "../assets/images/carearBg.jpg";
-import Footer from "./footer";
+import Footer from "../components/Footer";
 const OrderAnnotTrans = ({ serviceName, verb }) => {
   const [formData, setFormData] = useState({
     fullName: "",
