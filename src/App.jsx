@@ -29,20 +29,20 @@ function App() {
         <Route path="/our-services" element={<OurServices />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/order-translation" element={<OrderTranslation />} />
-        <Route path="/order-transcription" element={<OrderTranscription />} />
-        <Route path="/order-annotation" element={<OrderAnnotation />} />
-        <Route path="/order-copywriting" element={<OrderCopywriting />} />
+        <Route path="/order/translation" element={<OrderTranslation />} />
+        <Route path="/order/transcription" element={<OrderTranscription />} />
+        <Route path="/order/annotation" element={<OrderAnnotation />} />
+        <Route path="/order/copywriting" element={<OrderCopywriting />} />
         <Route
-          path="/order-subtitling/captioning"
+          path="/order/subtitling/captioning"
           element={<OrderSubtitlingCaption />}
         />
         <Route
-          path="/order-content-writing"
+          path="/order/content-writing"
           element={<OrderContentwriting />}
         />
-        <Route path="/order-design" element={<OrderDesign />} />
-        <Route path="/order-localization" element={<OrderLocalization />} />
+        <Route path="/order/design" element={<OrderDesign />} />
+        <Route path="/order/localization" element={<OrderLocalization />} />
         {/* servicesPage */}
         <Route
           path="/services/translation"
@@ -71,6 +71,17 @@ function App() {
           element={
             <ServicesWrapper
               serviceName={"Annotation"}
+              content={
+                "A town hall different from bala blu, blue blu bulaba. broom broom broom brooooooooom. Bala blu blue blu bulaba.A town hall different from bala blu, blue blu bulaba. broom broom broom brooooooooom. Bala blu blue blu bulaba. The farmers will make more money. Your lunch will not be imported, cassava garri ewa and ehhh ehhhhnn. The farmer will make money, the dinner would be cassava, eba, ewa and everything."
+              }
+            />
+          }
+        />
+        <Route
+          path="/services/localization"
+          element={
+            <ServicesWrapper
+              serviceName={"Localization"}
               content={
                 "A town hall different from bala blu, blue blu bulaba. broom broom broom brooooooooom. Bala blu blue blu bulaba.A town hall different from bala blu, blue blu bulaba. broom broom broom brooooooooom. Bala blu blue blu bulaba. The farmers will make more money. Your lunch will not be imported, cassava garri ewa and ehhh ehhhhnn. The farmer will make money, the dinner would be cassava, eba, ewa and everything."
               }

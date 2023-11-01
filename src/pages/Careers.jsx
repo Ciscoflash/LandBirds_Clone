@@ -1,7 +1,7 @@
 import React from "react";
 import Main from "../components/Main";
 import CarearBg from "../assets/images/carearBg.jpg";
-import Form from "../components/form";
+import Form from "../components/Form";
 const Careers = () => {
   return (
     <div>

@@ -41,14 +41,14 @@ const Navbar = ({ onServiceSelected }) => {
   }, []);
 
   const services = [
-    "Order Translation",
-    "Order Transcription",
-    "Order Annotation",
-    "Order Localization",
-    "Order Design",
-    "Order Subtitling/Captioning",
-    "Order Copywriting",
-    "Order Content Writing",
+    "Translation",
+    "Transcription",
+    "Annotation",
+    "Localization",
+    "Design",
+    "Subtitling/Captioning",
+    "Copywriting",
+    "Content Writing",
   ];
 
   const Menus = ["Home", "About Us", "Our Services", "Careers", "Contact Us"];
@@ -86,7 +86,9 @@ const Navbar = ({ onServiceSelected }) => {
                   {services.map((service, index) => (
                     <li key={index} className="hover:bg-blue-900  py-2.5">
                       <Link
-                        to={`/${service.toLowerCase().replace(/\s+/g, "-")}`}
+                        to={`/order/${service
+                          .toLowerCase()
+                          .replace(/\s+/g, "-")}`}
                         onClick={() => handleServiceClick(service)}
                       >
                         {service}

@@ -7,7 +7,7 @@ import { default as Langdif } from "../assets/images/langDiff.png";
 import FaqCard from "../components/FaqCard";
 import HowitworksCard from "../components/HowitworksCard";
 import { default as workingdesk } from "../assets/images/workingdesk2.jpg";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 
 const AboutUs = () => {
   return (
