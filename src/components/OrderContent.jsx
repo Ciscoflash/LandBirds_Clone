@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import CarearBg from "../assets/images/carearBg.jpg";
-import Footer from "../components/Footer";
-
+import Footer from "./footer";
 const OrderContent = ({ serviceName }) => {
   const [formData, setFormData] = useState({
     fullName: "",
