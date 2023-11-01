@@ -80,6 +80,11 @@ const Home = () => {
                   serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
                 />
                 <ServicesCard
+                  // className="hidden"
+                  serviceTitle={"Content Writing"}
+                  serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
+                />
+                <ServicesCard
                   serviceTitle={"Annotation"}
                   serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
                 />
@@ -88,12 +93,12 @@ const Home = () => {
                   serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
                 />
                 <ServicesCard
-                  serviceTitle={"Designs"}
+                  serviceTitle={"Design"}
                   serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
                 />
                 <ServicesCard
                   // className="hidden"
-                  serviceTitle={"Copywriting/Content Writing"}
+                  serviceTitle={"Copywriting"}
                   serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
                 />
               </div>
