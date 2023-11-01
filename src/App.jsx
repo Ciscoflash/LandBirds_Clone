@@ -8,7 +8,6 @@ import Navbar from "./components/Navbar";
 import Careers from "./pages/Careers";
 import AboutUs from "./pages/AboutUs";
 import OurServices from "./pages/OurServices";
-import Contactus from "./pages/Contactus";
 import OrderTranslation from "./pages/OrderTranslation";
 import OrderTranscription from "./pages/OrderTranscription";
 import OrderAnnotation from "./pages/OrderAnnotation";
@@ -17,6 +16,7 @@ import OrderContentwriting from "./pages/OrderContentwriting";
 import OrderSubtitlingCaption from "./pages/OrderSubtitlingCaption";
 import OrderDesign from "./pages/OrderDesign";
 import OrderLocalization from "./pages/OrderLocalization";
+import Contactus from "./pages/Contactus";
 
 function App() {
   return (
