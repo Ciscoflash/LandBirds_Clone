@@ -4,7 +4,7 @@ import Main from "../components/Main";
 import FaqCard from "../components/FaqCard";
 import HowitworksCard from "../components/HowitworksCard";
 import { default as workingdesk } from "../assets/images/workingdesk2.jpg";
-import Footer from "../components/footer";
+
 import { default as ManImage } from "../assets/images/image-3.jpg";
 import { default as BgImage } from "../assets/images/bgblue.jpg";
 import ServicesCard from "../components/ServicesCard";

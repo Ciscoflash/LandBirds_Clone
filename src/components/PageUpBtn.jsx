@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaRegHandPointUp } from "react-icons/fa";
+import { RxDoubleArrowUp } from "react-icons/rx";
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,7 +40,7 @@ const ScrollToTopButton = () => {
           title="Scroll to Top"
         >
           <div className="bg-blue-950 p-4">
-            <FaRegHandPointUp size={23} />
+            <RxDoubleArrowUp size={23} />
           </div>
         </button>
       )}
