@@ -5,6 +5,7 @@ import { LiaEditSolid } from "react-icons/lia";
 import { BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import AngledComponent from "./AngledComponent";
 
 const Navbar = ({ onServiceSelected }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,7 +55,7 @@ const Navbar = ({ onServiceSelected }) => {
 
   return (
     <>
-      <div className="h-22 w-full bg-white flex justify-between shadow-lg pl-16 sticky top-0 z-10">
+      <div className="h-22 font-sans font-light text-16 w-full bg-white flex justify-between shadow-lg pl-16 sticky top-0 z-10">
         <img src={Logo} alt="logo" className="w-auto py-3 cursor-pointer" />
         <div className="hidden lg:flex lg:w-[73%]  items-center justify-between ml-auto">
           {Menus.map((menu) => {
@@ -65,7 +66,7 @@ const Navbar = ({ onServiceSelected }) => {
                     ? "/"
                     : `/${menu.toLowerCase().replace(/\s+/g, "-")}`
                 }
-                className="list-none text-lg hover:text-blue-950 cursor-pointer"
+                className="list-none hover:text-blue-950 cursor-pointer"
                 key={menu}
               >
                 {menu}
@@ -73,12 +74,12 @@ const Navbar = ({ onServiceSelected }) => {
             );
           })}
           <div
-            className="flex relative h-full space-x-2 bg-blue-950 w-[15.5rem] px-6 cursor-pointer  items-center justify-center border-0 text-white hover:opacity-80 "
+            className="flex relative h-full text-17 space-x-2 bg-blue-950 w-[15.5rem] px-6 cursor-pointer  items-center justify-center border-0 text-white hover:opacity-80 "
             onClick={toggleDropdown}
             ref={dropdownRef} // Set the ref to the dropdown element
           >
-            <LiaEditSolid className="text-3xl" />
-            <span className="flex text-xl  text-center">Order a Service</span>
+            <LiaEditSolid className="text-[1.2rem] font-light" />
+            <span className="flex text-16 text-center">Order a Service</span>
             {showDropdown && (
               <div className="absolute w-full top-20 right-0 mt-2 bg-blue-950   rounded-sm shadow-md z-50">
                 <ul className="py-2">
@@ -104,11 +105,19 @@ const Navbar = ({ onServiceSelected }) => {
         </div>
       </div>
 
-      <div className="fixed left-10 hidden lg:flex items-center font-extralight text-[#0A98CC] top-48 justify-between w-[20rem] rotate-90 z-50 transform origin-left p-4 bg-transparent">
-        <a href="">GET A QUOTE</a>
+      <AngledComponent />
+      {/* <div className="fixed left-10 hidden lg:flex items-center font-light text-[#0A98CC] top-48 justify-between w-[20rem] rotate-90 z-50 transform origin-left p-4 bg-transparent">
+        <Link to="QuoteSection" spy={true} smooth={true} durationt={500}>
+          <a href="">GET A QUOTE</a>
+        </Link>
         <div className="w-[0.1rem] mx-2 h-12 bg-[#0A98CC] rotate-90 z-50 transform origin-left"></div>
-        <a href="">CONTACT US</a>
-      </div>
+        <Link
+          to={"/contact-us"}
+          // onClick={() => handleServiceClick(service)}
+        >
+          <a href="">CONTACT US</a>
+        </Link>
+      </div> */}
       {/* Mobile   Menu */}
       {isOpen && (
         <div className="fixed md:hidden top-0 left-0 w-screen h-screen  flex justify-center items-center bg-[#0C1220] z-50">

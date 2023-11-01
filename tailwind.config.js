@@ -7,6 +7,9 @@ export default {
         "hero-pattern": "url('../assets/images/carearBg.jpg')",
         "footer-texture": "url('/img/footer-texture.png')",
       },
+      fontFamily: {
+        sans: ["Muli", "sans"],
+      },
     },
   },
   plugins: [],

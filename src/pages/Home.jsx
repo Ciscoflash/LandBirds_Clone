@@ -5,16 +5,24 @@ import { default as ManImage } from "../assets/images/image-3.jpg";
 import { default as BgImage } from "../assets/images/bgblue.jpg";
 import { default as WhyusImg } from "../assets/images/whyus.jpg";
 import { default as workingdesk } from "../assets/images/workingdesk2.jpg";
+import { HiOutlineAnnotation, HiOutlineTranslate } from "react-icons/hi";
+import { CgTranscript } from "react-icons/cg";
 
+import { BiBookContent } from "react-icons/bi";
+import { SiTaichigraphics, SiLocal } from "react-icons/si";
+import { TfiWrite } from "react-icons/tfi";
+
+import { PiClosedCaptioningThin } from "react-icons/pi";
 import ServicesCard from "../components/ServicesCard";
 import HowitworksCard from "../components/HowitworksCard";
 import FaqCard from "../components/FaqCard";
 import QuoteForm from "../components/QuoteForm";
 import FooterWithForm from "../components/FooterWithForm";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="font-sans font-light text-16">
       <Main
         image={ManImage}
         textOverlay={"Open Your Business "}
@@ -28,14 +36,14 @@ const Home = () => {
             alt="Handshake"
             className="w-[70%] h-auto hidden lg:block"
           />
-          <div className="bg-[#f3f5f9] lg:w-[50%] w-full  lg:space-y-16 block  lg:absolute text-left lg:top-1/2 lg:right-16 lg:-translate-y-1/2 lg:transform  p-[3.5rem] ">
-            <h6 className="text-[#0d7fa3] md:text-[1.5rem] text-[1rem]    ">
+          <div className="bg-[#f3f5f9] lg:py-[8rem] py-[3rem] px-6 space-y-5 lg:px-[3.5rem]  lg:w-[50%] w-full  lg:space-y-10 block  lg:absolute text-left lg:top-1/2 lg:right-16 lg:-translate-y-1/2 lg:transform ">
+            <h6 className="text-[#0d7fa3] text-[18px]   ">
               LangBirds | Flying over Your Translation Needs
             </h6>
-            <h2 className="mt-[0.4em] text-[1.7rem] mb-8 md:text-[2.2rem]  text-[#0c1220] text-left">
+            <h2 className="mt-[0.4em] text-[1.7rem] mb-4 md:text-[2.4rem] font-light  text-[#0c1220] text-left">
               Order Professional Translations in Just a Few Clicks
             </h2>
-            <p className="text-[#44474a] md:text-[1.15rem] mb-8  text-justify">
+            <p className="text-[#44474a] text-[17px] mb-4  text-justify">
               Our team offers a range of professional translation, localization
               & desktop publishing (DTP) services that cater to the various
               demands of businesses across every sector imaginable.
@@ -51,54 +59,59 @@ const Home = () => {
         </div>
 
         {/* //We offer a wide range of services ;*/}
-        <div className="relative bg-[#f3f5f9] min-h-[138rem] sm:min-h-[106rem] md:min-h-[114rem] lg:min-h-[90rem] xl:min-h-[90rem] w-full  ">
+        <div className="relative bg-[#f3f5f9] h-auto w-full border-b ">
           <div
-            className="my-[4rem] mb-[3rem] bg-cover  bg-center  relative  h-[65rem]  w-full"
+            className="my-[4rem] mb-[3rem] bg-cover  bg-center   w-full"
             style={{ backgroundImage: `url(${BgImage})` }}
           >
             <div className="w-[80%] py-[2rem] md:py-[6rem] mx-auto ">
-              <div className="md:w-[40%] w-[60%] flex-wrap md:text-[2.5rem] text-[2rem] text-left">
+              <div className="md:w-[60%] w-[80%]   py-[3rem] flex-wrap md:text-[54px] text-[2rem] text-left">
                 <span className="text-[#0A98CC]  ">We Offer a Wide</span>
-                <span className="text-white">
-                  {" "}
-                  Range of Translation Services
-                </span>
+                <span className="text-white"> Range of Services</span>
               </div>
-              <div className="border-b md:py-[4rem] pb-16 grid  gap-4 lg:grid-cols-3 grid-cols-2 my-4">
+              <div className=" md:py-[4rem] pb-16 grid gap-4  md:gap-8 lg:grid-cols-3 grid-cols-2 my-4">
                 <ServicesCard
                   serviceTitle={"Localization"}
+                  serviceImg={<SiLocal />}
                   serviceInfo=" Localization Localization is conversion of
                    the terminology and cultural nuance from one part of the
                    world’s language, usually for marketing purposes,"
                 />
                 <ServicesCard
                   serviceTitle={"Translation"}
+                  serviceImg={<HiOutlineTranslate />}
                   serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
                 />
                 <ServicesCard
                   serviceTitle={"Transcription"}
+                  serviceImg={<CgTranscript />}
                   serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
                 />
                 <ServicesCard
                   // className="hidden"
                   serviceTitle={"Content Writing"}
+                  serviceImg={<BiBookContent />}
                   serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
                 />
                 <ServicesCard
                   serviceTitle={"Annotation"}
+                  serviceImg={<HiOutlineAnnotation />}
                   serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
                 />
                 <ServicesCard
                   serviceTitle={"Subtitling and Captioning"}
+                  serviceImg={<PiClosedCaptioningThin />}
                   serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
                 />
                 <ServicesCard
                   serviceTitle={"Design"}
+                  serviceImg={<SiTaichigraphics />}
                   serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
                 />
                 <ServicesCard
                   // className="hidden"
                   serviceTitle={"Copywriting"}
+                  serviceImg={<TfiWrite />}
                   serviceInfo="Translation, simply put, is the intellectual process carried out by a translator of conveying the meaning of a source text (Arabic, or AR, for example)"
                 />
               </div>
@@ -107,7 +120,7 @@ const Home = () => {
         </div>
 
         {/* Why Us SECTION */}
-        <div className="w-full  bg-[#f3f5f9] flex items-center lg:pb-16">
+        <div className="relative w-full  bg-[#f3f5f9] flex items-center lg:pb-16">
           <div className="md:w-[80%] bg-[#f3f5f9] w-full px-8 lg:px-4 pt-[5rem] grid  lg:grid-cols-2  mx-auto  ">
             <div className="w-[100%] ">
               <img src={WhyusImg} alt="Why-Us" className="w-full" />
@@ -136,7 +149,7 @@ const Home = () => {
 
               <button
                 href="#"
-                className="py-[7px] md:mb-16 font-medium text-sm md:text-md px-[28px] hover:bg-black bg-[#01335d] text-white"
+                className="py-[7px] md:mb-16  text-sm md:text-md px-[28px] hover:bg-black bg-[#01335d] text-white"
               >
                 Learn More
               </button>
@@ -146,7 +159,7 @@ const Home = () => {
 
         {/* Get Quote */}
         <div
-          className=" hidden  bg-cover  bg-center  md:h-[20rem] lg:h-[32rem] items-center md:flex w-full"
+          className=" hidden  bg-cover  bg-center  h-[20rem] lg:h-[32rem] items-center md:flex w-full"
           style={{ backgroundImage: `url(${BgImage})` }}
         >
           <div className="w-[80%] py-[4rem] space-y-8 md:leading-[3rem] lg:leading-[4rem]  mx-auto flex-wrap text-[2rem] text-left">
@@ -158,12 +171,16 @@ const Home = () => {
                 hurry?
               </span>
             </div>
-            <button
-              href="#"
-              className="  text-[0.95rem]  px-[45px] hover:bg-white bg-[#0d7fa3] text-white hover:text-black"
-            >
-              GET INSTANT QUOTE
-            </button>
+
+            <Link to={"/order-translation"}>
+              <button
+                href="#"
+                className="  text-[0.95rem]  px-[45px] hover:bg-white bg-[#0d7fa3] text-white hover:text-black"
+              >
+                GET INSTANT QUOTE
+              </button>
+            </Link>
+
             {/* #0d7fa3; */}
           </div>
         </div>
@@ -199,53 +216,59 @@ const Home = () => {
                   page={"03"}
                 />
               </div>
-              {/* <button
-                href="#"
-                className="  text-[0.95rem]  px-[45px] hover:bg-white bg-[#0d7fa3] text-white hover:text-black"
-              >
-                GET INSTANT QUOTE
-              </button> */}
-            </div>
-            <div className="  w-full space-y-10 lg:space-y-12">
-              {/* <FAQCards/> */}
-              <h1 className="">FAQs</h1>
-              <div className=" w-full space-y-4 lg:space-y-6">
-                <FaqCard
-                  header={"How can I receive a quote?"}
-                  body={
-                    "Just scroll the “Home” page down to the “Get a Quote” section. Fill-in the fields of each box and click “Get Me an Instant Quote” to get your quote immediately. You can contact us if more information are needed."
-                  }
-                />
-                <FaqCard
-                  header={"How can I a translation project?"}
-                  body={
-                    "Go to “Order Translation” tab and fill-in all box fields and click “Email My Quote”. We will receive your project instantly and send your quote with all project details. We will proceed with translation once you confirm your acceptance on the quote."
-                  }
-                />
-                <FaqCard
-                  header={"Who sees the documents for translation?"}
-                  body={
-                    "Our online dedicated team sees your uploaded documents, then they forward them to our project management to process your documents and get to you quickly with a quote."
-                  }
-                />
 
-                <FaqCard
-                  header={"What if I want to change or cancel my request?"}
-                  body={
-                    "Our team is dedicated to attend to your needs and messages. You can just send a message on our provided email to change or cancel any request and will receive instant replies."
-                  }
-                />
-              </div>
-              <button className="hover:bg-[#013350] px-6 py-2 lg:px-9 lg:py-5 rounded-sm text-white font-medium text-[0.8rem] lg:text-[1.2rem] bg-[#0c1220] flex-wrap text-center ">
-                CONTACT US NOW
-              </button>
+              {/* GET INSTANT QUOTE */}
             </div>
+            <section id="contactSection" className="mb-4">
+              <div className="  w-full space-y-10 lg:space-y-12">
+                {/* <FAQCards/> */}
+                <h1 className="">FAQs</h1>{" "}
+                <div className=" w-full space-y-4 lg:space-y-6">
+                  <FaqCard
+                    header={"How can I receive a quote?"}
+                    body={
+                      "Just scroll the “Home” page down to the “Get a Quote” section. Fill-in the fields of each box and click “Get Me an Instant Quote” to get your quote immediately. You can contact us if more information are needed."
+                    }
+                  />
+                  <FaqCard
+                    header={"How can I a translation project?"}
+                    body={
+                      "Go to “Order Translation” tab and fill-in all box fields and click “Email My Quote”. We will receive your project instantly and send your quote with all project details. We will proceed with translation once you confirm your acceptance on the quote."
+                    }
+                  />
+                  <FaqCard
+                    header={"Who sees the documents for translation?"}
+                    body={
+                      "Our online dedicated team sees your uploaded documents, then they forward them to our project management to process your documents and get to you quickly with a quote."
+                    }
+                  />
+
+                  <FaqCard
+                    header={"What if I want to change or cancel my request?"}
+                    body={
+                      "Our team is dedicated to attend to your needs and messages. You can just send a message on our provided email to change or cancel any request and will receive instant replies."
+                    }
+                  />
+                </div>
+                <button className="">
+                  <Link
+                    to={"/contact-us"}
+                    className=" hover:bg-[#013350] px-6 py-4 lg:py-5 lg:px-9 rounded-sm text-white  text-[0.8rem] lg:text-[1.2rem] bg-[#0c1220] flex-wrap text-center "
+                  >
+                    CONTACT US NOW
+                  </Link>
+                </button>
+              </div>{" "}
+            </section>
             {/* #0d7fa3; */}
           </div>
         </div>
+        {/* QuoteSection */}
 
         <FooterWithForm className="mt-[25rem]  w-full">
-          <QuoteForm />
+          <section id="QuoteSection">
+            <QuoteForm />
+          </section>
         </FooterWithForm>
       </Main>
     </div>
