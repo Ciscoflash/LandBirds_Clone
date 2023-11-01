@@ -1,6 +1,6 @@
 import React from "react";
 
-const form = ({ details, FirstNameL, LastNameL }) => {
+const Form = ({ details, FirstNameL, LastNameL }) => {
   return (
     <div>
       <form className="w-full p-8 flex flex-col gap-10  lg:w-3/4 m-auto  ">
@@ -133,4 +133,4 @@ const form = ({ details, FirstNameL, LastNameL }) => {
   );
 };
 
-export default form;
+export default Form;
