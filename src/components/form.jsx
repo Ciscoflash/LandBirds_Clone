@@ -107,7 +107,7 @@ const form = ({ details, FirstNameL, LastNameL }) => {
               Please type the characters*
             </label>
             <input
-              className="w-full p-8 text-black bg-gray-200 placeholder:text-gray-500 placeholder:text-2xl active:bg-gray-300 focus:bg-gray-300"
+              className="w-full p-5 text-black bg-gray-200 placeholder:text-gray-500 placeholder:text-2xl active:bg-gray-300 focus:bg-gray-300"
               type="email"
               name="character"
               placeholder=""
