@@ -16,7 +16,7 @@ import OrderContentwriting from "./pages/OrderContentwriting";
 import OrderSubtitlingCaption from "./pages/OrderSubtitlingCaption";
 import OrderDesign from "./pages/OrderDesign";
 import OrderLocalization from "./pages/OrderLocalization";
-import ContactUs from "./pages/Contactus";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
