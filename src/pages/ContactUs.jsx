@@ -7,7 +7,7 @@ import { BsTelephone } from "react-icons/bs";
 import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
 import Form from "../components/form";
 import FooterWithForm from "../components/FooterWithForm";
-const Contactus = () => {
+const ContactUs = () => {
   return (
     <div>
       <div
@@ -147,4 +147,4 @@ const Contactus = () => {
   );
 };
 
-export default Contactus;
+export default ContactUs;

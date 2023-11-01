@@ -8,7 +8,6 @@ import Navbar from "./components/Navbar";
 import Careers from "./pages/Careers";
 import AboutUs from "./pages/AboutUs";
 import OurServices from "./pages/OurServices";
-import Contactus from "./pages/Contactus";
 import OrderTranslation from "./pages/OrderTranslation";
 import OrderTranscription from "./pages/OrderTranscription";
 import OrderAnnotation from "./pages/OrderAnnotation";
@@ -18,6 +17,7 @@ import OrderSubtitlingCaption from "./pages/OrderSubtitlingCaption";
 import OrderDesign from "./pages/OrderDesign";
 import OrderLocalization from "./pages/OrderLocalization";
 import ServicesWrapper from "./components/ServicesWrapper";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/our-services" element={<OurServices />} />
         <Route path="/careers" element={<Careers />} />
-        <Route path="/contact-us" element={<Contactus />} />
+        <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/order-translation" element={<OrderTranslation />} />
         <Route path="/order-transcription" element={<OrderTranscription />} />
         <Route path="/order-annotation" element={<OrderAnnotation />} />
